@@ -9,21 +9,32 @@
     &-address {
         &-list {
             margin-top: 15px;
-            padding: 0 20px;
+            padding: 10px 20px;
             border-radius: 10px;
             background-color: white;
+        }
+        &-empty {
+            font-size: 15px;
+            margin: 0;
         }
         &-item {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            font-size: 15px;
             padding: 10px 0;
-            font-weight: bold;
             border-bottom: 0.5px solid #868782;
             &:last-of-type {
                 border: none;
+                padding-bottom: 0;
             }
+            &:first-of-type {
+                padding: 0;
+            }
+        }
+        &-search-item {
+            font-size: 15px;
+            font-weight: bold;
+            margin: 0;
         }
         &-arrival-time {
             color: #868782;
