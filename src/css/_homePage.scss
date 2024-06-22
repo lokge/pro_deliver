@@ -1,0 +1,74 @@
+.main {
+    &-box {
+        margin: 50px 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-address {
+        &-list {
+            margin-top: 15px;
+            padding: 0 20px;
+            border-radius: 10px;
+            background-color: white;
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 15px;
+            padding: 10px 0;
+            font-weight: bold;
+            border-bottom: 0.5px solid #868782;
+            &:last-of-type {
+                border: none;
+            }
+        }
+        &-arrival-time {
+            color: #868782;
+            font-size: 13px;
+            margin-bottom: 0;
+            font-weight: 400;
+            > span {
+                font-weight: bold;
+            }
+        }
+    }
+    &-form {
+        width: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        flex-direction: column;
+        &-input {
+            width: 100%;
+            height: 36px;
+            border: none;
+            color: black;
+            font-size: 17px;
+            padding-left: 37px;
+            border-radius: 10px;
+            background-color: #E9E9E9;
+            position: relative;
+        }
+        &-icon {
+            position: absolute;
+            left: 13px;
+            top: 6px;
+        }
+        &-button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            color: #F7F7F6;
+            border-radius: 10px;
+            background-color: #0C79FE;
+            transition: 0.3;
+            &:active {
+                background-color: #0a63cf;
+                transition: 0.3;
+            }
+        }
+    }
+}
